@@ -1,6 +1,5 @@
 library(ggplot2)
 library(RFinanceYJ)
-library(MASS)
 
 # repeat matrix (for norm calcurate)
 repmat <- function(mat, m, n) {

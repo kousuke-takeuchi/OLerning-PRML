@@ -50,10 +50,10 @@ ridge <- function(theta, n) {
 
 ## main routine
 # get stock data
-toyota <- quoteStockTsData('7203.t',  since='2012-01-01')
+toyota <- quoteStockTsData('7203.t',  since='2014-01-01')
 
 # ridge regression
-lamb <- 0.1
+lamb <- 0.0000001
 b <- 100
 theta <- ridge_regression(toyota$close, lamb, b)
 toyota$ridge <- ridge(theta, length(toyota$close))

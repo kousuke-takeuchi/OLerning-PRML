@@ -21,19 +21,9 @@ Conj_t <- function(x) {
   Conj(t(x))
 }
 
-# date size stretch for date.frame 
-stretch <- function(date, b) {
-  n <- length(date)*b
-  stretch_date <- rep(as.Date('1970-01-01'), n)
-  for (i in 1:n) {
-    stretch_date[i] <- date[ceiling(i/b)]
-  }
-  stretch_date
-}
-
 # gauss kernel
 gauss_kernel <- function(X, x) {
-  h <- 1
+  h <- 2
   hh <- 2*h^2
   n <- length(x)
   N <- length(X)
@@ -42,7 +32,7 @@ gauss_kernel <- function(X, x) {
 
 # ridge reglession
 ridge_reglession <- function(phi, y, b) {
-  lambda <- 0.05
+  lambda <- 0.1
   solve(Conj_t(phi) %*% phi + lambdaG(lambda, b)) %*% (Conj_t(phi) %*% y)
 }
 
@@ -55,13 +45,13 @@ lambdaG <- function(lambda, b) {
   }
 }
 
-T_electrick <- quoteStockTsData('7203.t', since='2013-11-01')
+T_electrick <- quoteStockTsData('7203.t', since='2013-01-01')
 
 y <- T_electrick$close
 
 n <- length(y)
-b <- 10
-N <- n*b
+b <- 1
+N <- n * b
 
 # linear reglession model
 x <- matrix(seq(0, n, length=n),n,1)
@@ -72,20 +62,14 @@ X <- matrix(seq(0, n, length=N),N,1)
 k <- gauss_kernel(x, x)
 K <- gauss_kernel(X, x)
 
-t1 <- ridge_reglession(k, y, 0)
-F1 <- K %*% t1
+t <- ridge_reglession(k, y, n)
+f <- K %*% t
 
-t2 <- ridge_reglession(k, y, n)
-F2 <- K %*% t2
+T_electrick$ridge <- f
 
-date <- T_electrick$date
-
-st <- stretch(date, b)
-df <- data.frame(date=st, close=F1, price=F2)
-
-gp <- ggplot(data=df, aes(x=scale_date, y=close))
+gp <- ggplot(data=T_electrick, aes(x=date, y=close))
 df_p <- gp +
   geom_point(aes(date, close, group=1), color='#66cc00') +
-  geom_line(aes(date, price, group=2), color='#ff6633', size=0.8) 
+  geom_line(aes(date, ridge, group=2), color='#ff6633', size=0.8) 
 print(df_p)
-ggsave('~/ml_graph_data/ridge_reglession_kernel_model.png')
+ggsave('./ridge_reglession_kernel_model_lambda01.png')

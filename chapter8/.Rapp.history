@@ -1,0 +1,37 @@
+library("RFinanceYJ")
+sony <- quoteStockTsData('6758.t', since='2011-01-01')
+head(sony)
+plot(sony[,1],sony[,5],type="l",xlab="Year",ylab="ClosingPrice")
+ls
+dir
+source('~/SemiB/classfy.R')
+source('~/SemiB/classify.R')
+install.packages(cbind)
+install.packages('cbind')
+source('~/SemiB/classify.R')
+error
+ggplot(melt(error), aes(x=X2, y=value)) + geom_point()
+exit
+ls
+getwd()
+setwd("/Users/kousuke/Documents/OLearning-PRML/chapter8")
+getwd()
+cd <- paste(getwd(), )
+cd <- paste(getwd(), "svm.R", sep="/")
+cd
+source(cd)
+head(init.df)
+head(spam.doc)
+head(spam.docs)
+spam.docs
+spam.df
+source(cd)
+spam.df
+source(cd)
+source("/Users/kousuke/Documents/OLearning-PRML/chapter8/svm.R")
+get.tdm
+spam.df
+spam
+spam.path
+spam.docs
+exit

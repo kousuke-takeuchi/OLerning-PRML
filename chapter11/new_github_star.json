@@ -1,0 +1,20 @@
+{
+  "github_stars" : [
+    {
+    	"url": "https://raw.githubusercontent.com/facebook/react-python",
+  		"star": 28
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/faif/python-patterns",
+  		"star": 2522
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/maraujop/requests-oauth",
+  		"star": 185
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/simplegeo/python-oauth2",
+  		"star": 1907
+  	}
+  ]
+}

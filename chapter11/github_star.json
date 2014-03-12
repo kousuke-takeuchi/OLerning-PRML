@@ -1,0 +1,84 @@
+{
+  "github_stars" : [
+    {
+  		"url": "https://raw.githubusercontent.com/exaviorn/RasPiWrite",
+  		"star": 207
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/paypal/rest-api-sdk-python",
+  		"star": 66
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/msgpack/msgpack-rpc-python",
+  		"star": 76
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/kingwkb/readability",
+  		"star": 113
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/heynemann/r3",
+  		"star": 315
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/pydata/pandas",
+  		"star": 2753
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/adafruit/Adafruit-Raspberry-Pi-Python-Code",
+  		"star": 380
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/nvie/rq",
+  		"star": 1238
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/RDFLib/rdflib",
+  		"star": 221
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/benhamner/Metrics",
+  		"star": 141
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/carljv/Will_it_Python",
+  		"star": 114
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/maxogden/refine-python",
+  		"star": 43
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/chapmanb/bcbb",
+  		"star": 199
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/litl/rauth",
+  		"star": 1191
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/echen/restricted-boltzmann-machines",
+  		"star": 143
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/noplay/python-mysql-replication",
+  		"star": 113
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/kvh/ramp",
+  		"star": 469
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/mjhea0/python-ruby",
+  		"star": 65
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/wuub/SublimeREPL",
+  		"star": 788
+  	},
+    {
+    	"url": "https://raw.githubusercontent.com/hadley/r-python",
+  		"star": 43
+  	}
+  ]
+}

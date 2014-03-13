@@ -56,9 +56,5 @@ newmd.dtm <- DocumentTermMatrix(new_corpus, control)
 new_x <- as.matrix(newmd.dtm) # got data!!
 
 # predict good or bad
-indices <- sample(1:20, 4)
-trainning.x <- x[indices, ]
-trainning.y <- y[indices]
 lambda = 0.1
-glm.fit <- glmnet(trainning.x, trainning.y, family='binomial')
-predicted_y <- ifelse(predict(glm.fit, new_x, s = lambda) > 0, 1, 0)
+predicted_y <- ifelse(predict(regularized.fit, newx = x, s = lambda) > 0, 1, 0)

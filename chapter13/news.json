@@ -1,0 +1,92 @@
+{
+  "companies" : [
+    {
+    	"name": "Asahi",
+  		"val": { "treat" : 4.1,
+                "moral" : 3.4,
+                "env" : 3.0,
+                "band" : 2.8,
+                "young" : 3.6,
+                "long" : 2.7,
+                "compliance" : 3.2,
+                "affair" : 2.4 }
+  	},
+    {
+      "name": "Nikkei",
+  		"val": {  "treat" : 3.7,
+                "moral" : 2.8,
+                "env" : 2.4,
+                "band" : 2.4,
+                "young" : 3.0,
+                "long" : 2.7,
+                "compliance" : 3.1,
+                "affair" : 2.6 }
+  	},
+    {
+      "name": "Mainichi",
+  		"val": {  "treat" : 2.7,
+                "moral" : 3.5,
+                "env" : 3.8,
+                "band" : 3.6,
+                "young" : 4.5,
+                "long" : 2.9,
+                "compliance" : 3.6,
+                "affair" : 3.1 }
+  	},
+    {
+      "name": "NikkanSports",
+  		"val": {  "treat" : 3.3,
+                "moral" : 2.7,
+                "env" : 2.7,
+                "band" : 2.4,
+                "young" : 2.4,
+                "long" : 2.0,
+                "compliance" : 3.1,
+                "affair" : 2.7 }
+  	},
+    {
+      "name": "NikkanKogyo",
+  		"val": {  "treat" : 2.0,
+                "moral" : 3.0,
+                "env" : 3.4,
+                "band" : 3.0,
+                "young" : 3.4,
+                "long" : 2.4,
+                "compliance" : 3.0,
+                "affair" : 3.0 }
+  	},
+    {
+      "name": "NipponKyoiku",
+  		"val": {  "treat" : 1.8,
+                "moral" : 2.8,
+                "env" : 1.8,
+                "band" : 2.8,
+                "young" : 3.2,
+                "long" : 1.8,
+                "compliance" : 2.8,
+                "affair" : 2.2 }
+  	},
+    {
+      "name": "SankeiLiving",
+  		"val": {   "treat" : 3.7,
+                "moral" : 3.0,
+                "env" : 4.0,
+                "band" : 4.0,
+                "young" : 3.0,
+                "long" : 3.3,
+                "compliance" : 3.0,
+                "affair" : 3.3 }
+  	},
+    {
+      "name": "Sankei",
+  		"val": {  "treat" : 2.2,
+                "moral" : 2.7,
+                "env" : 3.4,
+                "band" : 3.2,
+                "young" : 3.8,
+                "long" : 2.7,
+                "compliance" : 2.0,
+                "affair" : 2.8 }
+  	}
+  ]
+}
